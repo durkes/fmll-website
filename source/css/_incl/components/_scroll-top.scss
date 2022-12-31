@@ -1,0 +1,32 @@
+.scroll-top {
+	&.animated {
+		position: fixed;
+		right: 30px;
+		bottom: 30px;
+		display: block;
+		visibility: hidden;
+		width: 50px;
+		padding: 13px 0;
+		text-align: center;
+		background-color: rgba(38, 38, 40, 0.4);
+	}
+
+	&:before {
+		font-size: 24px;
+		color: #fff;
+	}
+
+	&:hover {
+		background-color: $color-primary;
+		text-decoration: none;
+	}
+
+	transition: background-color 0.15s ease-in-out;
+}
+
+@media screen and (max-width: 767px) {
+	.scroll-top.animated {
+		right: 10px;
+		bottom: 10px;
+	}
+}

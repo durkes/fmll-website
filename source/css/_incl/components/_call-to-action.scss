@@ -1,0 +1,45 @@
+.call-to-action {
+	padding: 30px 18px 47px;
+	text-align: center;
+	border: 1px solid $color-gray-darker;
+
+	&:before {
+		font-size: 3pc;
+		display: block;
+		width: 3pc;
+		height: 3pc;
+		margin-right: auto;
+		margin-left: auto;
+		padding: 19px;
+		color: $color-primary;
+		border: 1px solid $color-gray-darker;
+		-webkit-border-radius: 50%;
+		-moz-border-radius: 50%;
+		border-radius: 50%;
+	}
+
+	h4 {
+		margin-top: 22px;
+	}
+
+	p.description {
+		margin-top: 17px;
+		margin-bottom: 43px;
+	}
+
+	.more {
+		margin-top: 28px;
+	}
+}
+
+@media screen and (max-width: 1189px) {
+	.call-to-action .more {
+		display: block;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.call-to-action .more {
+		display: inline;
+	}
+}

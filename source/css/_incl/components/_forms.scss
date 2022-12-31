@@ -1,0 +1,156 @@
+input.entry, textarea.entry {
+	font-family: $font-family-base;
+	font-size: 14px;
+	line-height: 24px;
+	margin: 0;
+	padding: 9pt 15px;
+	color: #444;
+	border: 1px solid $color-gray-darker;
+	border-radius: 0;
+
+	box-sizing: border-box;
+	width: 100%;
+
+	&:hover {
+		border-color: $color-gray-darkest;
+	}
+
+	&:focus {
+		border-color: $color-primary;
+	}
+
+	&.hint {
+		color: #999;
+	}
+}
+
+input[type=checkbox] {
+	-webkit-appearance: checkbox;
+}
+
+input, textarea {
+	&:focus {
+		outline: 0;
+	}
+
+	&.invalid {
+		&,
+		&:focus {
+			border-color: red;
+		}
+	}
+}
+
+.error {
+	color: red;
+}
+
+::-moz-focus-inner {
+	border: 0;
+}
+
+.contact-form input.entry, .estimate-form input.entry {
+	margin-top: 20px;
+
+	&:first-child {
+		margin-top: 0;
+	}
+}
+
+.contact-form textarea.entry, .estimate-form textarea.entry {
+	height: 190px;
+	resize: none;
+}
+
+.contact-form p.description.t1, .estimate-form p.description.t1 {
+	margin-top: 14px;
+}
+
+:-moz-placeholder, ::-moz-placeholder {
+	opacity: 1;
+	color: #999;
+}
+
+:-ms-input-placeholder {
+	color: #999;
+}
+
+.estimate-form label, .header .logo a, ul.customer-list li {
+	display: inline-block;
+}
+
+.estimate-form {
+	.addr-city {
+		width: 300px;
+	}
+
+	.addr-state {
+		width: 55px;
+	}
+
+	.addr-zip {
+		width: 185px;
+	}
+
+	.addr-state, .addr-zip {
+		margin-left: 15px;
+	}
+
+	label {
+		margin: 0.5em;
+	}
+}
+
+label {
+	font-family: $font-family-alt;
+	cursor: pointer;
+	color: #25282a;
+}
+
+@media screen and (max-width: 1189px) {
+	.estimate-form {
+		.addr-city {
+			width: 170px;
+		}
+
+		.addr-state {
+			width: 55px;
+		}
+
+		.addr-zip {
+			width: 105px;
+		}
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.estimate-form {
+		.addr-city {
+			width: 17pc;
+		}
+
+		.addr-state, .addr-zip {
+			margin-top: 0;
+		}
+	}
+}
+
+@media screen and (max-width: 479px) {
+	.estimate-form {
+		.addr-city {
+			width: 137px;
+		}
+
+		.addr-state {
+			width: 55px;
+		}
+
+		.addr-zip {
+			width: 90px;
+		}
+
+		.addr-state, .addr-zip {
+			margin-left: 9px;
+		}
+	}
+}

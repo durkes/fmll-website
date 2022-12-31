@@ -1,0 +1,193 @@
+.tabs .ui-tabs-panel p {
+	font-family: $font-family-base;
+	font-size: 14px;
+	line-height: 24px;
+}
+
+.tabs-navigation {
+	li {
+		a {
+			font-family: $font-family-base;
+			font-size: 14px;
+			line-height: 24px;
+		}
+
+		padding: 0;
+		list-style: none;
+		border: none;
+	}
+
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-align: center;
+	border: none;
+	background: 0 0;
+}
+
+.tabs.align-left {
+	.tabs-navigation, .ui-tabs-panel {
+		text-align: left;
+	}
+}
+
+.tabs-navigation {
+	li {
+		position: relative;
+		display: inline-block;
+		margin-left: 26px;
+		text-align: center;
+
+		&:first-child {
+			margin-left: 0;
+		}
+	}
+
+	&.small {
+		&.gray-tab li a {
+			background-color: $color-gray;
+		}
+
+		li {
+			margin-right: 6px;
+			margin-bottom: 10px;
+			margin-left: 0;
+
+			a {
+				min-width: 0;
+				padding: 15px 20px;
+			}
+		}
+	}
+
+	a:before {
+		font-size: 3pc;
+		display: block;
+		margin-right: auto;
+		margin-left: auto;
+		padding: 20px 20px 9pt;
+		color: $color-primary;
+	}
+
+	li {
+		a {
+			display: block;
+			min-width: 180px;
+			padding: 10px 0 23px;
+			text-align: center;
+			text-decoration: none;
+			color: #444;
+			border: none;
+			outline: 0;
+			background-color: #fff;
+
+			&:hover:before {
+				color: #fff;
+			}
+		}
+
+		&.ui-tabs-active a:before {
+			color: #fff;
+		}
+
+		&:last-child a {
+			border-right: none;
+		}
+
+		a:hover, &.ui-tabs-active a {
+			color: #fff;
+			background: $color-primary;
+		}
+	}
+
+	&.small.gray-tab li {
+		a:hover, &.ui-tabs-active a {
+			color: #fff;
+			background: $color-primary;
+		}
+	}
+
+	li.ui-tabs-active span {
+		position: absolute;
+		bottom: -9px;
+		left: 50%;
+		margin-left: -9px;
+		border-width: 9px 9px 0;
+		border-style: solid;
+		border-color: $color-primary transparent;
+	}
+}
+
+.tabs {
+	.ui-tabs-panel {
+		padding: 42px 0 0;
+		text-align: center;
+	}
+
+	&.small .ui-tabs-panel {
+		padding: 0;
+	}
+
+	.ui-tabs-panel p {
+		padding: 34px 0 0;
+	}
+
+	&.small .ui-tabs-panel p {
+		padding: 24px 0 0;
+	}
+
+	.ui-tabs-panel h4.box-header:after {
+		margin-right: auto;
+		margin-left: auto;
+	}
+}
+
+@media screen and (max-width: 1189px) {
+	.tabs .ui-tabs-panel p {
+		padding: 24px 0 0;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.tabs-navigation li {
+		margin-left: 6px;
+
+		a {
+			min-width: 130px;
+			padding: 0 0 13px;
+		}
+	}
+}
+
+@media screen and (max-width: 479px) {
+	.tabs-navigation {
+		text-align: left;
+
+		&.small {
+			text-align: center;
+		}
+
+		li {
+			margin-top: 10px;
+			margin-right: 6px;
+			margin-left: 0;
+		}
+
+		&.small li {
+			margin-top: 0;
+			margin-left: 0;
+		}
+
+		li a {
+			padding: 5px 0;
+		}
+
+		a::before, li.ui-tabs-active span {
+			display: none;
+		}
+	}
+}

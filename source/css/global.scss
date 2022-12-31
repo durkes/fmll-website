@@ -1,0 +1,43 @@
+/* imports */
+@import './_incl/variables';
+@import './_incl/grid';
+@import './_incl/spacers';
+@import './_incl/core';
+@import './_incl/type';
+@import './_incl/animation';
+
+/* components */
+@import './_incl/components/slider';
+@import './_incl/components/forms';
+@import './_incl/components/top-bar';
+@import './_incl/components/header';
+@import './_incl/components/page-title';
+@import './_incl/components/article';
+@import './_incl/components/vertical-menu';
+@import './_incl/components/contact';
+@import './_incl/components/testimonials';
+@import './_incl/components/services-list';
+@import './_incl/components/styled-list';
+@import './_incl/components/customer-list';
+@import './_incl/components/tabs';
+@import './_incl/components/accordion';
+@import './_incl/components/scroll-top';
+@import './_incl/components/announcement';
+@import './_incl/components/call-to-action';
+@import './_incl/components/footer';
+@import './_incl/components/parallax';
+@import './_incl/components/buttons';
+@import './_incl/components/loading';
+
+/* plugins */
+@import './_incl/plugins/rev-slider';
+@import './_incl/plugins/prettyPhoto';
+
+/* fonts */
+@import './_incl/plugins/font-streamline-small';
+@import './_incl/plugins/font-streamline-large';
+@import './_incl/plugins/font-custicon';
+/* @import './_incl/plugins/font-social'; */
+
+/* overrides */
+@import './_incl/overrides';

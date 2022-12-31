@@ -1,0 +1,35 @@
+// $color-primary: #45ac45; // original color
+// $color-primary: #62C920; // from tineye: grass in logo - primary
+// $color-primary: #399410; // from tineye: grass in logo - secondary
+$color-primary: #43A634; // compromise of above
+// $color-primary: #28B02B; // found in the wild
+
+// $color-gray: #f5f5f5;
+// $color-gray: #f4f5f6;
+$color-gray: #f1f2f3; // darker for bright screens
+// $color-gray-darker: #e2e6e7;
+$color-gray-darker: darken($color-gray, 10%);
+$color-gray-darkest: darken($color-gray-darker, 15%);
+
+$font-family-base: Raleway, sans-serif;
+$font-family-alt: Arial, sans-serif;
+
+$body-text: #444;
+$body-bg: #fff;
+$header-color: #000;
+
+/* -------------------------------------------------------------------------- */
+$top-bar-bg: $color-gray;
+$top-bar-border: rgba(0, 0, 0, 0.06);
+$top-bar-text: #999;
+$top-bar-toggle: #444;
+
+$top-bar-bg: $color-primary;
+$top-bar-border: rgba(0, 0, 0, 0.1);
+$top-bar-text: #fff;
+$top-bar-toggle: rgba(255, 255, 255, 0.85);
+
+$top-bar-bg: #161616;
+$top-bar-border: rgba(255, 255, 255, 0.1);
+
+/* -------------------------------------------------------------------------- */

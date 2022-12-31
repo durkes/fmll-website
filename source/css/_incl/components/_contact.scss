@@ -1,0 +1,64 @@
+.contact-details-list li {
+	&:before {
+		font-size: 3pc;
+		display: block;
+		float: left;
+		width: 3pc;
+		height: 3pc;
+		margin-right: 30px;
+		padding: 19px;
+		color: $color-primary;
+		border: 1px solid #fff;
+		-webkit-border-radius: 50%;
+		-moz-border-radius: 50%;
+		border-radius: 50%;
+		background-color: #fff;
+	}
+
+	p {
+		a {
+			color: #fff;
+		}
+
+		font-family: $font-family-base;
+		font-size: 1pc;
+		line-height: 26px;
+		color: #fff;
+	}
+}
+
+@media screen and (max-width: 1189px) {
+	.contact-details-list li {
+		&:before {
+			float: none;
+			margin-right: auto;
+			margin-left: auto;
+		}
+
+		p {
+			clear: both;
+			text-align: center;
+		}
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.contact-details-list li {
+		&::before {
+			float: left;
+			margin-right: 30px;
+			margin-left: auto;
+		}
+
+		p {
+			clear: none;
+			text-align: left;
+		}
+	}
+}
+
+@media screen and (max-width: 479px) {
+	.contact-details-list li::before {
+		margin-right: 10px;
+	}
+}

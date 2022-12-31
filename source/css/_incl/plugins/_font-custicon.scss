@@ -1,0 +1,108 @@
+@charset "UTF-8";
+
+@font-face {
+	font-family: "custicon";
+	font-weight: normal;
+	font-style: normal;
+
+	src: url("../fonts/custicon.eot");
+	src: url("../fonts/custicon.eot?#iefix") format("embedded-opentype"),
+	url("../fonts/custicon.woff") format("woff"),
+	url("../fonts/custicon.ttf") format("truetype"),
+	url("../fonts/custicon.svg#custicon") format("svg");
+
+}
+
+[data-icon]:before {
+	font-family: "custicon" !important;
+	font-weight: normal !important;
+	font-style: normal !important;
+	font-variant: normal !important;
+	line-height: 1;
+
+	content: attr(data-icon);
+	vertical-align: middle;
+	text-transform: none !important;
+
+	speak: none;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+[class^="custicon-"]:before,
+[class*=" custicon-"]:before {
+	font-family: "custicon" !important;
+	font-weight: normal !important;
+	font-style: normal !important;
+	font-variant: normal !important;
+	line-height: 1;
+
+	vertical-align: middle;
+	text-transform: none !important;
+
+	speak: none;
+	direction: ltr;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.custicon-arrow-left-1:before {
+	content: "a";
+}
+.custicon-arrow-right-1:before {
+	content: "b";
+}
+.custicon-arrow-left-2:before {
+	content: "c";
+}
+.custicon-arrow-right-2:before {
+	content: "d";
+}
+.custicon-arrow-menu:before {
+	content: "e";
+}
+.custicon-map-marker:before {
+	content: "f";
+}
+.custicon-arrow-circle-down:before {
+	content: "g";
+}
+.custicon-arrow-circle-right:before {
+	content: "h";
+}
+.custicon-bullet:before {
+	content: "i";
+}
+.custicon-search:before {
+	content: "j";
+}
+.custicon-shopping-cart:before {
+	content: "k";
+}
+.custicon-phone:before {
+	content: "l";
+}
+.custicon-mail:before {
+	content: "m";
+}
+.custicon-clock:before {
+	content: "n";
+}
+.custicon-location:before {
+	content: "o";
+}
+.custicon-eye:before {
+	content: "p";
+}
+.custicon-bubble:before {
+	content: "q";
+}
+.custicon-arrow-up:before {
+	content: "r";
+}
+.custicon-calendar:before {
+	content: "s";
+}
+.custicon-arrow-dropdown:before {
+	content: "t";
+}

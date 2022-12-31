@@ -1,0 +1,126 @@
+@charset "UTF-8";
+
+@font-face {
+	font-family: "social";
+	font-weight: normal;
+	font-style: normal;
+
+	src: url("../fonts/social.eot");
+	src: url("../fonts/social.eot?#iefix") format("embedded-opentype"),
+	url("../fonts/social.woff") format("woff"),
+	url("../fonts/social.ttf") format("truetype"),
+	url("../fonts/social.svg#social") format("svg");
+
+}
+
+[data-icon]:before {
+	font-family: "social" !important;
+	font-weight: normal !important;
+	font-style: normal !important;
+	font-variant: normal !important;
+	line-height: 1;
+
+	content: attr(data-icon);
+	vertical-align: middle;
+	text-transform: none !important;
+
+	speak: none;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+[class^="social-"]:before,
+[class*=" social-"]:before {
+	font-family: "social" !important;
+	font-weight: normal !important;
+	font-style: normal !important;
+	font-variant: normal !important;
+	line-height: 1;
+
+	vertical-align: middle;
+	text-transform: none !important;
+
+	speak: none;
+	direction: ltr;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.social-facebook:before {
+	content: "a";
+}
+.social-twitter:before {
+	content: "b";
+}
+.social-google-plus:before {
+	content: "c";
+}
+.social-youtube:before {
+	content: "d";
+}
+.social-linkedin:before {
+	content: "e";
+}
+.social-pinterest:before {
+	content: "f";
+}
+.social-dribble:before {
+	content: "g";
+}
+.social-skype:before {
+	content: "h";
+}
+.social-tumblr:before {
+	content: "i";
+}
+.social-instagram:before {
+	content: "j";
+}
+.social-xing:before {
+	content: "k";
+}
+.social-flickr:before {
+	content: "l";
+}
+.social-foursquare:before {
+	content: "m";
+}
+.social-rss:before {
+	content: "n";
+}
+.social-behance:before {
+	content: "o";
+}
+.social-picasa:before {
+	content: "p";
+}
+.social-stumbleupon:before {
+	content: "r";
+}
+.social-vimeo:before {
+	content: "s";
+}
+.social-houzz:before {
+	content: "t";
+}
+.social-yelp:before {
+	content: "q";
+}
+.social-github:before {
+	content: "u";
+}
+.social-reddit:before {
+	content: "v";
+}
+.social-soundcloud:before {
+	content: "w";
+}
+.social-vk:before {
+	content: "x";
+}
+.social-vine:before {
+	content: "y";
+}
+.social-angies-list:before {
+	content: "z";
+}

@@ -1,0 +1,105 @@
+.top-bar-container {
+	background-color: $top-bar-bg;
+
+	.toggle {
+		display: none;
+		clear: both;
+		padding: 15px 0;
+		transform: rotate(180deg);
+		text-align: center;
+		color: $top-bar-toggle;
+		-ms-filter: fliph;
+		filter: fliph;
+		-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+		&.active {
+			transform: rotate(0);
+		}
+	}
+
+	a {
+		text-decoration: none;
+	}
+}
+
+.top-bar {
+	width: 1170px;
+	margin-right: auto;
+	margin-left: auto;
+
+	ul li {
+		font-family: $font-family-base;
+		font-size: 13px;
+		font-weight: 500;
+		line-height: 20px;
+		float: left;
+		padding: 15px 20px;
+		border-right: 1px solid $top-bar-border;
+		color: $top-bar-text;
+
+		a {
+			color: $top-bar-text;
+		}
+
+		&:first-child {
+			border-left: 1px solid $top-bar-border;
+		}
+
+		&:before {
+			font-size: 14px;
+			position: relative;
+			top: -1px;
+			margin-right: 10px;
+		}
+	}
+}
+
+@media screen and (max-width: 1189px) {
+	.top-bar {
+		width: 750px;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.top-bar {
+		width: 462px;
+
+		ul li {
+			padding: 15px 9px;
+		}
+	}
+}
+
+@media screen and (min-width: 480px) {
+	/* override inline display: none for devices that switch between mobile and default menus */
+
+	div[class*="top-bar"] {
+		display: block !important;
+	}
+}
+
+@media screen and (max-width: 479px) {
+	.top-bar {
+		display: none;
+		width: 300px;
+		padding-top: 10px;
+	}
+
+	.top-bar-container .toggle {
+		display: block;
+	}
+
+	.top-bar ul {
+		display: block;
+
+		li {
+			clear: both;
+			padding: 5px;
+			border: none;
+
+			&:first-child {
+				border: none;
+			}
+		}
+	}
+}

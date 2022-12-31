@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	@@include("./_incl/html_head.html", {"title": "Page Not Found", "keywords": "", "description": ""})
+</head>
+<body>
+	<div class="site-container">
+		@@include("./_incl/header.html", {"parent": "selected", "child": "selected"})
+
+		<div class="padding-b6">
+			@@include("./_incl/title.html", {"title": "Error 404", "parent": "Home", "url": "index.html"})
+
+			<div class="clearfix page-short">
+				<div class="row margin-t7">
+					<div class="column column-1-1">
+						<ul class="features-list big">
+							<li class="sl-large-construction">
+								<div class="ornament"></div>
+								<h2 class="box-header margin-t5">PAGE NOT FOUND</h2>
+								<p class="description">
+									We're sorry, but we can't seem to find the page you requested.<br>
+									If you entered the URL manually, please check for typos.
+								</p>
+
+								<div class="row padding-t5 padding-b2">
+									<a class="more" href="index.html">GO TO HOME</a>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		@@include("./_incl/contact.html")
+		@@include("./_incl/footer.html")
+	</div>
+
+	@@include("./_incl/html_foot.html")
+</body>
+</html>

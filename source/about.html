@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	@@include("./_incl/html_head.html", {"title": "About Us",
+	"keywords": "landscaping, lawn care, customer testimonials, customer reviews",
+	"description": "See what our customers have to say about our professional lawn and landscaping services. View photos of our work and current customer properties."})
+</head>
+<body>
+	<div class="site-container">
+		@@include("./_incl/header.html", {"about": "selected", "child": "selected"})
+
+		<div>
+			@@include("./_incl/title.html", {"title": "About Us", "parent": "Home", "url": "index.html"})
+
+			<div class="clearfix">
+				<div class="row margin-t7">
+					<div class="column column-1-2 align-center re-preload">
+						<img src="images/pics/480x480/lawn-1.jpg" class="radius" alt="Lawn Care">
+					</div>
+					<div class="column column-1-2">
+						<h2 class="box-header align-left">WE ARE FM LAWN &amp; LANDSCAPE</h2>
+						<p class="description t1">
+							We are your lawn and landscape professionals, headquartered in Lawrence, Kansas. We take pride in our professionals' creativity and craftsmanship. With talented staff and state of the art equipment, FM Lawn &amp; Landscape is recognized as a leader throughout the Midwest.
+						</p>
+						<p class="description t1">
+							Our team is comprised of mowing crews, landscapers, chemical applicators, irrigation technicians, equipment operators, and excavators. We assist with construction projects and maintain managed properties, as well as commercial and residential customer properties including:
+						</p>
+						<ul class="list margin-t2">
+							<li class="custicon-bullet">Allen Fieldhouse</li>
+							<li class="custicon-bullet">Hoglund Ballpark</a></li>
+							<li class="custicon-bullet">Memorial Stadium</li>
+							<li class="custicon-bullet">Rock Chalk Park</li>
+							<li class="custicon-bullet"><i>and many more...</i></li>
+						</ul>
+						<p class="description t1">
+							Have a question about our services or pricing? <a href="estimate.html">Request a free estimate</a> for more information.
+						</p>
+						<div class="margin-t5">
+							<a class="more" href="contact.html">CONTACT US</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="row gray full-width margin-t6 padding-t6 padding-b7">
+					<div class="row">
+						<div class="column column-1-2">
+							<ul class="features-list">
+								<li class="sl-small-building">
+									<h4>COMMERCIAL</h4>
+									<p>We proudly serve commercial needs, business customers, and associations.</p>
+								</li>
+							</ul>
+						</div>
+						<div class="column column-1-2">
+							<ul class="features-list">
+								<li class="sl-small-house-1">
+									<h4>RESIDENTIAL</h4>
+									<p>Let us apply our proven formulas to give you the results your neighbors will envy.</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<a name="testimonials"></a>
+				<div class="row full-width padding-t7 padding-b6 parallax bg-2">
+					<div class="row testimonials-container">
+						<a href="#" class="slider-control left custicon-arrow-left-1"></a>
+						@@include("./_incl/testimonials_list.html")
+						<a href="#" class="slider-control right custicon-arrow-right-1"></a>
+					</div>
+				</div>
+
+				@@include("./_incl/customers_list.html")
+			</div>
+		</div>
+
+		@@include("./_incl/contact.html")
+		@@include("./_incl/footer.html")
+	</div>
+
+	@@include("./_incl/html_foot.html")
+</body>
+</html>

@@ -1,0 +1,67 @@
+.animated {
+	position: relative;
+
+	visibility: hidden;
+}
+
+.fadeIn {
+	visibility: visible !important;
+
+	-webkit-animation-timing-function: cubic-bezier(0.75, 0, 0.25, 1);
+	animation-timing-function: cubic-bezier(0.75, 0, 0.25, 1);
+
+	-webkit-animation-name: fadeIn;
+	animation-name: fadeIn;
+}
+
+.fadeOut {
+	visibility: visible !important;
+
+	-webkit-animation-timing-function: cubic-bezier(0.75, 0, 0.25, 1);
+	animation-timing-function: cubic-bezier(0.75, 0, 0.25, 1);
+
+	-webkit-animation-name: fadeOut;
+	animation-name: fadeOut;
+
+	opacity: 0;
+}
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+@-webkit-keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes fadeOut {
+	0% {
+		opacity: 1;
+	}
+
+	100% {
+		opacity: 0;
+	}
+}
+
+@-webkit-keyframes fadeOut {
+	0% {
+		opacity: 1;
+	}
+
+	100% {
+		opacity: 0;
+	}
+}

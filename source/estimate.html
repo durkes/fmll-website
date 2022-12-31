@@ -1,0 +1,253 @@
+<!DOCTYPE html> <html>
+<head>
+	@@include("./_incl/html_head.html", {"title": "Free Service Estimate",
+	"keywords": "free estimate, free quote, lawn care, landscaping, landscape development, snow removal, tree maintenance, irrigation systems, hardscapes",
+	"description": "Request your free estimate for lawn care, landscape development, sprinkler system installation and maintenance, tree care, hardscapes, snow removal, and more."})
+</head>
+<body>
+	<div class="site-container">
+		@@include("./_incl/header.html", {"estimate": "selected", "child": "selected"})
+
+		<div class="padding-b6">
+			@@include("./_incl/title.html", {"title": "Service Estimate", "parent": "Home", "url": "index.html"})
+
+			<div class="clearfix">
+				<div class="row margin-t7">
+					<div class="column column-1-3 hide-md-dn">
+						<img src="images/pics/480x480/calc.jpg" class="radius" alt="Calculator">
+
+						<div class="margin-t3">
+							<a href="images/pics/750x500/shrubs.jpg" class="prettyPhoto re-preload" data-caption="&nbsp;">
+								<img src="images/pics/480x480/shrubs.jpg" class="radius" alt="Shrub Care">
+							</a>
+						</div>
+						<div class="margin-t3">
+							<a href="images/pics/750x500/ld-tulips.jpg" class="prettyPhoto re-preload" data-caption="&nbsp;">
+								<img src="images/pics/480x480/ld-tulips.jpg" class="radius" alt="Planted Tulips">
+							</a>
+						</div>
+					</div>
+
+					<div class="column column-1-2 margin-t0-md">
+						<h3 class="box-header">Your Lawn &amp; Landscape Estimate</h3>
+						<p class="description t1">
+							Please complete the form below to request your free estimate or more information about any of our services.
+							<!--Request your free estimate below. All information is confidential and used strictly to provide you with an estimated cost for our services.-->
+						</p>
+
+						<form class="estimate-form" id="estimate-form" method="post" action="php/form-in.php" novalidate onsubmit="return false;">
+							<div class="row margin-t3">
+								<input class="entry" name="name" type="text" placeholder="Your Name *" maxlength="100" data-required="true">
+								<input class="entry" name="business" type="text" placeholder="Business / Association (if applicable)" maxlength="100">
+								<input class="entry" name="email" type="email" placeholder="Email Address *" maxlength="200" data-required="true" data-pattern="^[^\s@]+@[^\s@]+\.[^\s@]+$">
+								<input class="entry" name="phone" type="tel" placeholder="Phone # *" maxlength="20" data-required="true" data-pattern="\d{3,}">
+
+								<h5 class="box-header margin-t3">Location</h5>
+								<input class="entry" name="street" type="text" placeholder="Street Address" maxlength="150">
+							</div>
+							<div class="row margin-t2">
+								<div class="column addr-city">
+									<input class="entry" name="city" type="text" placeholder="City *" maxlength="100" data-required="true">
+								</div>
+								<div class="column addr-state">
+									<input class="entry" name="state" type="text" placeholder="State *" maxlength="2" value="KS" maxlength="2" data-required="true">
+								</div>
+								<div class="column addr-zip">
+									<input class="entry" name="zip" type="text" placeholder="Zip Code" maxlength="10">
+								</div>
+							</div>
+							<div class="row">
+								<h5 class="box-header margin-t4">Services needed</h5>
+								<p class="description t1">Select all that apply from each tab below.</p>
+								<div class="tabs small no-scroll align-left clearfix margin-t2" id="tab">
+									<ul class="tabs-navigation small gray-tab clearfix">
+										<li>
+											<a href="#landscape-development">
+												Landscaping
+											</a>
+										</li>
+										<li>
+											<a href="#irrigation">
+												Irrigation
+											</a>
+										</li>
+										<li>
+											<a href="#turf-management">
+												Lawn, Turf
+											</a>
+										</li>
+										<li>
+											<a href="#tree-maintenance">
+												Tree Care
+											</a>
+										</li>
+										<li>
+											<a href="#hardscapes">
+												Hardscapes
+											</a>
+										</li>
+										<li>
+											<a href="#snow-removal">
+												Snow, Ice
+											</a>
+										</li>
+									</ul>
+									<div id="landscape-development">
+										<label>
+											<input type="checkbox" name="service[]" value="Landscape Development: Design and planning">
+											Design and planning
+										</label><br>
+										<label>
+											<input type="checkbox" name="service[]" value="Landscape Development: Bed installation">
+											Bed installation
+										</label><br>
+										<label>
+											<input type="checkbox" name="service[]" value="Landscape Development: Maintenance">
+											Maintenance
+										</label><br>
+										<label>
+											<input type="checkbox" name="service[]" value="Landscape Development: Excavation">
+											Excavation
+										</label><br>
+										<label>
+											<input type="checkbox" name="service[]" value="Landscape Development: Retaining walls">
+											Retaining wall
+										</label><br>
+									</div>
+									<div id="irrigation">
+										<label>
+											<input type="checkbox" name="service[]" value="Irrigation: Design and planning">
+											Design and planning
+										</label><br>
+										<label>
+											<input type="checkbox" name="service[]" value="Irrigation: Installation">
+											Installation
+										</label><br>
+										<label>
+											<input type="checkbox" name="service[]" value="Irrigation: Maintenance">
+											Maintenance
+										</label><br>
+									</div>
+									<div id="turf-management">
+										<label>
+											<input type="checkbox" name="service[]" value="Turf Management: Mowing">
+											Mowing
+										</label><br>
+										<label>
+											<input type="checkbox" name="service[]" value="Turf Management: Herbicide application">
+											Herbicide application
+										</label><br>
+										<label>
+											<input type="checkbox" name="service[]" value="Turf Management: Pesticide application">
+											Pesticide application
+										</label><br>
+										<label>
+											<input type="checkbox" name="service[]" value="Turf Management: Sod installation">
+											Sod installation
+										</label><br>
+										<label>
+											<input type="checkbox" name="service[]" value="Turf Management: Weed maintenance">
+											Weed maintenance
+										</label><br>
+									</div>
+									<div id="tree-maintenance">
+										<label>
+											<input type="checkbox" name="service[]" value="Tree Maintenance: Pruning">
+											Pruning
+										</label><br>
+										<label>
+											<input type="checkbox" name="service[]" value="Tree Maintenance: Emerald Ash Borer treatment">
+											Emerald Ash Borer treatment
+										</label><br>
+										<label>
+											<input type="checkbox" name="service[]" value="Tree Maintenance: Herbicide application">
+											Herbicide application
+										</label><br>
+										<label>
+											<input type="checkbox" name="service[]" value="Tree Maintenance: Fungicide application">
+											Fungicide application
+										</label><br>
+										<label>
+											<input type="checkbox" name="service[]" value="Tree Maintenance: Pesticide application">
+											Pesticide application
+										</label><br>
+										<label>
+											<input type="checkbox" name="service[]" value="Tree Maintenance: Removal">
+											Removal
+										</label><br>
+										<label>
+											<input type="checkbox" name="service[]" value="Tree Maintenance: Stump grinding">
+											Stump grinding
+										</label><br>
+									</div>
+									<div id="hardscapes">
+										<label>
+											<input type="checkbox" name="service[]" value="Hardscapes: Retaining wall">
+											Retaining wall
+										</label><br>
+										<label>
+											<input type="checkbox" name="service[]" value="Hardscapes: Flagstone walkway">
+											Flagstone walkway
+										</label><br>
+										<label>
+											<input type="checkbox" name="service[]" value="Hardscapes: Inset paver">
+											Inset paver
+										</label><br>
+										<label>
+											<input type="checkbox" name="service[]" value="Hardscapes: Outdoor fireplace">
+											Outdoor fireplace
+										</label><br>
+									</div>
+									<div id="snow-removal">
+										<label>
+											<input type="checkbox" name="service[]" value="Snow Removal: Plowing">
+											Plowing
+										</label><br>
+										<label>
+											<input type="checkbox" name="service[]" value="Snow Removal: Salt and sand application">
+											Salt and sand application
+										</label><br>
+										<label>
+											<input type="checkbox" name="service[]" value="Snow Removal: Driveway">
+											Driveway
+										</label><br>
+										<label>
+											<input type="checkbox" name="service[]" value="Snow Removal: Parking lot">
+											Parking lot
+										</label><br>
+										<label>
+											<input type="checkbox" name="service[]" value="Snow Removal: Sidewalk">
+											Sidewalk
+										</label><br>
+									</div>
+								</div>
+							</div>
+							<div class="row margin-t3">
+								<p class="description t1">Please provide any additional comments including a description of the area, trees, or work needed.</p>
+								<textarea class="entry" name="comments" placeholder="Comments" maxlength="10000"></textarea>
+							</div>
+							<div class="row margin-t2">
+								<p class="description t1 error"></p>
+								<div class="align-right margin-t2">
+									<input type="hidden" name="action" value="estimate">
+									<button type="submit" name="submit" class="more">REQUEST ESTIMATE</button>
+								</div>
+							</div>
+						</form>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+		@@include("./_incl/contact.html")
+		@@include("./_incl/footer.html")
+	</div>
+
+	<div id="loading" class="off">
+		<img src="images/loader-trans.gif" alt="Please wait...">
+	</div>
+
+	@@include("./_incl/html_foot.html")
+</body>
+</html>

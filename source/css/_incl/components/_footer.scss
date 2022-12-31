@@ -1,0 +1,45 @@
+.boxed {
+	#footer {
+		padding-bottom: 75px;
+	}
+
+	#footer-img {
+		background: 0 0;
+	}
+}
+
+#footer {
+	padding-bottom: 150px;
+}
+
+#footer-img {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	height: 140px;
+	text-align: center;
+	background-image: url(../images/pics/etc/footer-grass.png);
+	background-repeat: repeat-x;
+
+	.copyright {
+		line-height: 24px;
+		position: relative;
+		top: 105px;
+		display: inline-block;
+		margin: 0 auto;
+		padding: 0 10px;
+		border-radius: 5px;
+		background-color: rgba(0, 0, 0, 0.4);
+		color: rgba(255, 255, 255, 0.85);
+
+		a {
+			color: rgba(255, 255, 255, 0.85);
+		}
+	}
+}
+
+#footer .custicon-bullet a {
+	font-weight: inherit;
+	color: inherit;
+}

@@ -1,0 +1,78 @@
+.title {
+	box-sizing: border-box;
+	min-height: 75pt;
+	padding: 1em 0;
+
+  /* remove emboss styling on sides */
+  border-left: 0 !important;
+  border-right: 0 !important;
+}
+
+.title-left {
+	float: left;
+	width: 25pc;
+}
+
+.title-right {
+	float: right;
+	width: 650px;
+
+	span {
+		float: left;
+	}
+}
+
+.crumb-container {
+	float: right;
+	padding: 7px 0;
+}
+
+.crumb {
+	float: left;
+
+	li {
+		font-family: $font-family-base;
+		font-size: 13px;
+		font-weight: 500;
+		line-height: 20px;
+		float: left;
+		margin-left: 3px;
+		color: #999;
+
+		a {
+			font-family: $font-family-base;
+			font-size: 13px;
+			font-weight: 500;
+			line-height: 20px;
+			color: #444;
+		}
+	}
+}
+
+.crumb-container span {
+	font-family: $font-family-base;
+	font-size: 13px;
+	font-weight: 500;
+	line-height: 20px;
+	color: #999;
+}
+
+@media screen and (max-width: 1189px) {
+	.title-left {
+		width: 300px;
+	}
+
+	.title-right {
+		width: 450px;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.title-left, .title-right {
+		width: 100%;
+	}
+
+	.crumb-container {
+		float: left;
+	}
+}

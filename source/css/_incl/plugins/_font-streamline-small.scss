@@ -1,0 +1,538 @@
+@charset "UTF-8";
+
+@font-face {
+	font-family: "streamline-small";
+	font-weight: normal;
+	font-style: normal;
+
+	src: url("../fonts/streamline-small.eot");
+	src: url("../fonts/streamline-small.eot?#iefix") format("embedded-opentype"),
+	url("../fonts/streamline-small.woff") format("woff"),
+	url("../fonts/streamline-small.ttf") format("truetype"),
+	url("../fonts/streamline-small.svg#streamline-small") format("svg");
+
+}
+
+[data-icon]:before {
+	font-family: "streamline-small" !important;
+	font-weight: normal !important;
+	font-style: normal !important;
+	font-variant: normal !important;
+	line-height: 1;
+
+	content: attr(data-icon);
+	vertical-align: middle;
+	text-transform: none !important;
+
+	speak: none;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+[class^="sl-small-"]:before,
+[class*=" sl-small-"]:before {
+	font-family: "streamline-small" !important;
+	font-weight: normal !important;
+	font-style: normal !important;
+	font-variant: normal !important;
+	line-height: 1;
+
+	vertical-align: middle;
+	text-transform: none !important;
+
+	speak: none;
+	direction: ltr;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.sl-small-helmet:before {
+	line-height: 46px;
+
+	height: 48px;
+
+	content: "a";
+}
+.sl-small-wallet:before {
+	line-height: 52px;
+
+	height: 48px;
+
+	content: "b";
+}
+.sl-small-roller:before {
+	line-height: 48px;
+
+	height: 48px;
+
+	content: "c";
+}
+.sl-small-driller:before {
+	line-height: 38px;
+
+	height: 48px;
+
+	content: "d";
+}
+.sl-small-bubble-check:before {
+	line-height: 48px;
+
+	height: 48px;
+
+	content: "e";
+}
+.sl-small-shield:before {
+	line-height: 48px;
+
+	height: 48px;
+
+	content: "f";
+}
+.sl-small-truck:before {
+	line-height: 34px;
+
+	height: 48px;
+
+	content: "g";
+}
+.sl-small-house-1:before {
+	line-height: 38px;
+
+	height: 48px;
+
+	content: "h";
+}
+.sl-small-eco:before {
+	line-height: 48px;
+
+	height: 48px;
+
+	content: "i";
+}
+.sl-small-garage:before {
+	line-height: 38px;
+
+	height: 48px;
+
+	content: "j";
+}
+.sl-small-conversation:before {
+	line-height: 48px;
+
+	height: 48px;
+
+	content: "k";
+}
+.sl-small-phone:before {
+	line-height: 48px;
+
+	height: 48px;
+
+	content: "l";
+}
+.sl-small-location:before {
+	line-height: 52px;
+
+	height: 48px;
+
+	content: "m";
+}
+.sl-small-mail:before {
+	line-height: 38px;
+
+	height: 48px;
+
+	content: "n";
+}
+.sl-small-wrench:before {
+	line-height: 48px;
+
+	height: 48px;
+
+	content: "o";
+}
+.sl-small-measure:before {
+	line-height: 48px;
+
+	height: 48px;
+
+	content: "p";
+}
+.sl-small-bucket:before {
+	line-height: 48px;
+
+	height: 48px;
+
+	content: "q";
+}
+.sl-small-globe:before {
+	line-height: 48px;
+
+	height: 48px;
+
+	content: "r";
+}
+.sl-small-house-2:before {
+	line-height: 44px;
+
+	height: 48px;
+
+	content: "s";
+}
+.sl-small-briefcase:before {
+	line-height: 38px;
+
+	height: 48px;
+
+	content: "t";
+}
+.sl-small-quote:before {
+	line-height: 52px;
+
+	height: 48px;
+
+	content: "u";
+}
+.sl-small-clock:before {
+	line-height: 48px;
+
+	height: 48px;
+
+	content: "v";
+}
+.sl-small-fax:before {
+	line-height: 44px;
+
+	height: 48px;
+
+	content: "w";
+}
+.sl-small-key:before {
+	line-height: 48px;
+
+	height: 48px;
+
+	content: "x";
+}
+.sl-small-pencil:before {
+	line-height: 44px;
+
+	height: 48px;
+
+	content: "y";
+}
+.sl-small-hammer:before {
+	line-height: 46px;
+
+	height: 48px;
+
+	content: "z";
+}
+.sl-small-wrenches:before {
+	line-height: 48px;
+
+	height: 48px;
+
+	content: "A";
+}
+.sl-small-screwdriver:before {
+	line-height: 48px;
+
+	height: 48px;
+
+	content: "B";
+}
+.sl-small-ruler:before {
+	line-height: 48px;
+
+	height: 48px;
+
+	content: "C";
+}
+.sl-small-stationery:before {
+	line-height: 48px;
+
+	height: 48px;
+
+	content: "D";
+}
+.sl-small-faq:before {
+	line-height: 44px;
+
+	height: 48px;
+
+	content: "E";
+}
+.sl-small-bubble:before {
+	line-height: 48px;
+
+	height: 48px;
+
+	content: "F";
+}
+.sl-small-person:before {
+	line-height: 48px;
+
+	height: 48px;
+
+	content: "G";
+}
+.sl-small-team:before {
+	line-height: 38px;
+
+	height: 48px;
+
+	content: "H";
+}
+.sl-small-camera:before {
+	line-height: 48px;
+
+	height: 48px;
+
+	content: "I";
+}
+.sl-small-picture:before {
+	line-height: 44px;
+
+	height: 48px;
+
+	content: "J";
+}
+.sl-small-cart-1:before {
+	line-height: 48px;
+
+	height: 48px;
+
+	content: "K";
+}
+.sl-small-cart-2:before {
+	line-height: 48px;
+
+	height: 48px;
+
+	content: "L";
+}
+.sl-small-photo:before {
+	line-height: 48px;
+
+	height: 48px;
+
+	content: "M";
+}
+.sl-small-video:before {
+	line-height: 48px;
+
+	height: 48px;
+
+	content: "N";
+}
+.sl-small-speaker:before {
+	line-height: 50px;
+
+	height: 48px;
+
+	content: "O";
+}
+.sl-small-lock:before {
+	line-height: 48px;
+
+	height: 48px;
+
+	content: "P";
+}
+.sl-small-trophy:before {
+	line-height: 48px;
+
+	height: 48px;
+
+	content: "Q";
+}
+.sl-small-chat:before {
+	line-height: 48px;
+
+	height: 48px;
+
+	content: "R";
+}
+.sl-small-list:before {
+	line-height: 48px;
+
+	height: 48px;
+
+	content: "S";
+}
+.sl-small-poster:before {
+	line-height: 48px;
+
+	height: 48px;
+
+	content: "T";
+}
+.sl-small-documents:before {
+	line-height: 48px;
+
+	height: 48px;
+
+	content: "U";
+}
+.sl-small-forklift:before {
+	line-height: 38px;
+
+	height: 48px;
+
+	content: "V";
+}
+.sl-small-building:before {
+	line-height: 48px;
+
+	height: 48px;
+
+	content: "W";
+}
+.sl-small-fence:before {
+	line-height: 48px;
+
+	height: 48px;
+
+	content: "X";
+}
+.sl-small-lab:before {
+	line-height: 48px;
+
+	height: 48px;
+
+	content: "Y";
+}
+.sl-small-watering-can:before {
+	line-height: 40px;
+
+	height: 48px;
+
+	content: "Z";
+}
+.sl-small-trowel:before {
+	line-height: 48px;
+
+	height: 48px;
+
+	content: "0";
+}
+.sl-small-shovel:before {
+	line-height: 48px;
+
+	height: 48px;
+
+	content: "1";
+}
+.sl-small-cone:before {
+	line-height: 48px;
+
+	height: 48px;
+
+	content: "2";
+}
+.sl-small-lightbulb:before {
+	line-height: 48px;
+
+	height: 48px;
+
+	content: "3";
+}
+.sl-small-door:before {
+	line-height: 48px;
+
+	height: 48px;
+
+	content: "4";
+}
+.sl-small-bricks:before {
+	line-height: 34px;
+
+	height: 48px;
+
+	content: "5";
+}
+.sl-small-brush-1:before {
+	line-height: 48px;
+
+	height: 48px;
+
+	content: "6";
+}
+.sl-small-brush-2:before {
+	line-height: 48px;
+
+	height: 48px;
+
+	content: "7";
+}
+.sl-small-percent:before {
+	line-height: 48px;
+
+	height: 48px;
+
+	content: "8";
+}
+.sl-small-gears:before {
+	line-height: 48px;
+
+	height: 48px;
+
+	content: "9";
+}
+.sl-small-tick:before {
+	line-height: 42px;
+
+	height: 48px;
+
+	content: "!";
+}
+.sl-small-plan:before {
+	line-height: 48px;
+
+	height: 48px;
+
+	content: "@";
+}
+.sl-small-megaphone:before {
+	line-height: 48px;
+
+	height: 48px;
+
+	content: "#";
+}
+.sl-small-calculator:before {
+	line-height: 48px;
+
+	height: 48px;
+
+	content: "$";
+}
+.sl-small-trolley:before {
+	line-height: 48px;
+
+	height: 48px;
+
+	content: "%";
+}
+.sl-small-payment:before {
+	line-height: 48px;
+
+	height: 48px;
+
+	content: "^";
+}
+.sl-small-construction:before {
+	line-height: 48px;
+
+	height: 48px;
+
+	content: "&";
+}
+.sl-small-scissors:before {
+	line-height: 48px;
+
+	height: 48px;
+
+	content: "*";
+}

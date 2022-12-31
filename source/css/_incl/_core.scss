@@ -1,0 +1,69 @@
+html {
+	height: 100%;
+}
+
+a, body, div, fieldset, form, html, img, label, p, span {
+	font-family: inherit;
+	font-size: 100%;
+	font-weight: inherit;
+	font-style: inherit;
+	margin: 0;
+	padding: 0;
+	vertical-align: baseline;
+	border: 0;
+	outline: 0;
+}
+
+:focus {
+	outline: 0;
+}
+
+body {
+	font-family: $font-family-base;
+	font-size: 14px;
+	line-height: 1;
+	position: relative;
+	min-height: 100%;
+	margin: 0;
+	padding: 0;
+	color: $body-text;
+	background-color: $body-bg;
+
+	&.bg-1 {
+		$this-url: '../images/pics/etc/autumn-leaves.jpg';
+		background: url($this-url);
+
+		/* fallback */
+		background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url($this-url) (center / cover) no-repeat fixed;
+	}
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+img {
+	max-width: 100%;
+}
+
+a {
+	text-decoration: none;
+	color: $color-primary;
+	outline: 0;
+	transition: all 0.1s ease-in-out 0s;
+
+	&:hover {
+		text-decoration: underline;
+	}
+
+	img {
+		transition: opacity 0.3s ease 0s;
+		opacity: 1;
+	}
+
+	&:hover img {
+		opacity: 0.8;
+	}
+}

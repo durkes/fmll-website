@@ -1,0 +1,58 @@
+.announcement {
+	width: 1170px;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 30px 0;
+
+	.valign-cell:before {
+		font-size: 3pc;
+		float: left;
+		margin-right: 30px;
+		padding: 19px;
+		color: $color-primary;
+		border: 1px solid $color-gray-darker;
+		border-radius: 50%;
+	}
+
+	.valign {
+		height: 88px;
+	}
+
+	h3 {
+		margin-left: 118px;
+	}
+
+	p.description {
+		margin-top: 14px;
+		margin-left: 118px;
+	}
+}
+
+@media screen and (max-width: 1189px) {
+	.announcement {
+		width: 750px;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.announcement {
+		width: 462px;
+
+		.column-right {
+			margin-top: 40px;
+			margin-bottom: 20px;
+			text-align: center;
+		}
+
+		.valign, .valign-cell {
+			display: block;
+			height: auto;
+		}
+	}
+}
+
+@media screen and (max-width: 479px) {
+	.announcement {
+		width: 300px;
+	}
+}

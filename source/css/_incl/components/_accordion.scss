@@ -1,0 +1,100 @@
+.accordion {
+	.ui-accordion-header.ui-state-active {
+		.ui-accordion-header-icon, h5 {
+			color: #fff;
+		}
+	}
+
+	.ui-accordion-content {
+		padding: 30px 0 20px;
+	}
+
+	.ui-accordion-header {
+		font-family: $font-family-base;
+		line-height: 24px;
+		padding: 1pc 15px;
+		cursor: pointer;
+		-webkit-transition: padding-left 0.3s, padding-right 0.3s;
+		-moz-transition: padding-left 0.3s, padding-right 0.3s;
+		transition: padding-left 0.3s, padding-right 0.3s;
+		transition-timing-function: ease;
+		border-bottom: 1px solid $color-gray-darker;
+		-webkittransition-timing-function: ease;
+		-mozkittransition-timing-function: ease;
+
+		h5 {
+			font-weight: 400;
+			margin-top: 2px;
+			margin-bottom: 1px;
+			margin-left: 39px;
+			letter-spacing: normal;
+		}
+
+		&.ui-state-active {
+			border-bottom-color: $color-primary;
+			background-color: $color-primary;
+		}
+
+		.ui-accordion-header-icon {
+			font-size: 24px;
+			float: left;
+			margin-right: 15px;
+			color: $color-primary;
+		}
+
+		&:hover {
+			padding-right: 5px;
+			padding-left: 25px;
+		}
+
+		&.ui-state-active:hover {
+			padding: 1pc 15px;
+		}
+	}
+
+	p.description {
+		margin: 0;
+	}
+
+	li:last-child .ui-accordion-header {
+		border-bottom: 0;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.accordion .ui-accordion-header {
+		padding: 6px 5px 6px 9px;
+
+		&.ui-state-active:hover {
+			padding: 6px 5px 6px 9px;
+		}
+
+		.ui-accordion-header-icon {
+			margin-right: 11px;
+		}
+
+		h5 {
+			margin-left: 35px;
+		}
+
+		&:hover {
+			padding-right: 0;
+			padding-left: 14px;
+		}
+	}
+}
+
+@media screen and (max-width: 479px) {
+	.accordion .ui-accordion-header {
+		padding: 1pc 15px;
+
+		&.ui-state-active:hover {
+			padding: 1pc 15px;
+		}
+
+		&:hover {
+			padding-right: 5px;
+			padding-left: 25px;
+		}
+	}
+}

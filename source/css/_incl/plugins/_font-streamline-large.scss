@@ -1,0 +1,538 @@
+@charset "UTF-8";
+
+@font-face {
+	font-family: "streamline-large";
+	font-weight: normal;
+	font-style: normal;
+
+	src: url("../fonts/streamline-large.eot");
+	src: url("../fonts/streamline-large.eot?#iefix") format("embedded-opentype"),
+	url("../fonts/streamline-large.woff") format("woff"),
+	url("../fonts/streamline-large.ttf") format("truetype"),
+	url("../fonts/streamline-large.svg#streamline-large") format("svg");
+
+}
+
+[data-icon]:before {
+	font-family: "streamline-large" !important;
+	font-weight: normal !important;
+	font-style: normal !important;
+	font-variant: normal !important;
+	line-height: 1;
+
+	content: attr(data-icon);
+	vertical-align: middle;
+	text-transform: none !important;
+
+	speak: none;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+[class^="sl-large-"]:before,
+[class*=" sl-large-"]:before {
+	font-family: "streamline-large" !important;
+	font-weight: normal !important;
+	font-style: normal !important;
+	font-variant: normal !important;
+	line-height: 1;
+
+	vertical-align: middle;
+	text-transform: none !important;
+
+	speak: none;
+	direction: ltr;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.sl-large-helmet:before {
+	line-height: 58px;
+
+	height: 60px;
+
+	content: "a";
+}
+.sl-large-wallet:before {
+	line-height: 64px;
+
+	height: 60px;
+
+	content: "b";
+}
+.sl-large-roller:before {
+	line-height: 60px;
+
+	height: 60px;
+
+	content: "c";
+}
+.sl-large-driller:before {
+	line-height: 60px;
+
+	height: 60px;
+
+	content: "d";
+}
+.sl-large-bubble-check:before {
+	line-height: 60px;
+
+	height: 60px;
+
+	content: "e";
+}
+.sl-large-shield:before {
+	line-height: 60px;
+
+	height: 60px;
+
+	content: "f";
+}
+.sl-large-truck:before {
+	line-height: 42px;
+
+	height: 60px;
+
+	content: "g";
+}
+.sl-large-house-1:before {
+	line-height: 54px;
+
+	height: 60px;
+
+	content: "h";
+}
+.sl-large-eco:before {
+	line-height: 60px;
+
+	height: 60px;
+
+	content: "i";
+}
+.sl-large-garage:before {
+	line-height: 54px;
+
+	height: 60px;
+
+	content: "j";
+}
+.sl-large-conversation:before {
+	line-height: 60px;
+
+	height: 60px;
+
+	content: "k";
+}
+.sl-large-phone:before {
+	line-height: 60px;
+
+	height: 60px;
+
+	content: "l";
+}
+.sl-large-location:before {
+	line-height: 64px;
+
+	height: 60px;
+
+	content: "m";
+}
+.sl-large-mail:before {
+	line-height: 60px;
+
+	height: 60px;
+
+	content: "n";
+}
+.sl-large-wrench:before {
+	line-height: 60px;
+
+	height: 60px;
+
+	content: "o";
+}
+.sl-large-measure:before {
+	line-height: 60px;
+
+	height: 60px;
+
+	content: "p";
+}
+.sl-large-bucket:before {
+	line-height: 60px;
+
+	height: 60px;
+
+	content: "q";
+}
+.sl-large-globe:before {
+	line-height: 60px;
+
+	height: 60px;
+
+	content: "r";
+}
+.sl-large-house-2:before {
+	line-height: 60px;
+
+	height: 60px;
+
+	content: "s";
+}
+.sl-large-briefcase:before {
+	line-height: 60px;
+
+	height: 60px;
+
+	content: "t";
+}
+.sl-large-quote:before {
+	line-height: 60px;
+
+	height: 60px;
+
+	content: "u";
+}
+.sl-large-clock:before {
+	line-height: 60px;
+
+	height: 60px;
+
+	content: "v";
+}
+.sl-large-fax:before {
+	line-height: 56px;
+
+	height: 60px;
+
+	content: "w";
+}
+.sl-large-key:before {
+	line-height: 60px;
+
+	height: 60px;
+
+	content: "x";
+}
+.sl-large-pencil:before {
+	line-height: 56px;
+
+	height: 60px;
+
+	content: "y";
+}
+.sl-large-hammer:before {
+	line-height: 58px;
+
+	height: 60px;
+
+	content: "z";
+}
+.sl-large-wrenches:before {
+	line-height: 60px;
+
+	height: 60px;
+
+	content: "A";
+}
+.sl-large-screwdriver:before {
+	line-height: 60px;
+
+	height: 60px;
+
+	content: "B";
+}
+.sl-large-ruler:before {
+	line-height: 60px;
+
+	height: 60px;
+
+	content: "C";
+}
+.sl-large-stationery:before {
+	line-height: 60px;
+
+	height: 60px;
+
+	content: "D";
+}
+.sl-large-faq:before {
+	line-height: 58px;
+
+	height: 60px;
+
+	content: "E";
+}
+.sl-large-bubble:before {
+	line-height: 60px;
+
+	height: 60px;
+
+	content: "F";
+}
+.sl-large-person:before {
+	line-height: 60px;
+
+	height: 60px;
+
+	content: "G";
+}
+.sl-large-team:before {
+	line-height: 50px;
+
+	height: 60px;
+
+	content: "H";
+}
+.sl-large-camera:before {
+	line-height: 60px;
+
+	height: 60px;
+
+	content: "I";
+}
+.sl-large-picture:before {
+	line-height: 56px;
+
+	height: 60px;
+
+	content: "J";
+}
+.sl-large-cart-1:before {
+	line-height: 60px;
+
+	height: 60px;
+
+	content: "K";
+}
+.sl-large-cart-2:before {
+	line-height: 60px;
+
+	height: 60px;
+
+	content: "L";
+}
+.sl-large-photo:before {
+	line-height: 60px;
+
+	height: 60px;
+
+	content: "M";
+}
+.sl-large-video:before {
+	line-height: 60px;
+
+	height: 60px;
+
+	content: "N";
+}
+.sl-large-speaker:before {
+	line-height: 60px;
+
+	height: 60px;
+
+	content: "O";
+}
+.sl-large-lock:before {
+	line-height: 60px;
+
+	height: 60px;
+
+	content: "P";
+}
+.sl-large-trophy:before {
+	line-height: 60px;
+
+	height: 60px;
+
+	content: "Q";
+}
+.sl-large-chat:before {
+	line-height: 60px;
+
+	height: 60px;
+
+	content: "R";
+}
+.sl-large-list:before {
+	line-height: 60px;
+
+	height: 60px;
+
+	content: "S";
+}
+.sl-large-poster:before {
+	line-height: 60px;
+
+	height: 60px;
+
+	content: "T";
+}
+.sl-large-documents:before {
+	line-height: 60px;
+
+	height: 60px;
+
+	content: "U";
+}
+.sl-large-forklift:before {
+	line-height: 44px;
+
+	height: 60px;
+
+	content: "V";
+}
+.sl-large-building:before {
+	line-height: 60px;
+
+	height: 60px;
+
+	content: "W";
+}
+.sl-large-fence:before {
+	line-height: 60px;
+
+	height: 60px;
+
+	content: "X";
+}
+.sl-large-lab:before {
+	line-height: 60px;
+
+	height: 60px;
+
+	content: "Y";
+}
+.sl-large-watering-can:before {
+	line-height: 60px;
+
+	height: 60px;
+
+	content: "Z";
+}
+.sl-large-trowel:before {
+	line-height: 60px;
+
+	height: 60px;
+
+	content: "0";
+}
+.sl-large-shovel:before {
+	line-height: 60px;
+
+	height: 60px;
+
+	content: "1";
+}
+.sl-large-cone:before {
+	line-height: 60px;
+
+	height: 60px;
+
+	content: "2";
+}
+.sl-large-lightbulb:before {
+	line-height: 60px;
+
+	height: 60px;
+
+	content: "3";
+}
+.sl-large-door:before {
+	line-height: 60px;
+
+	height: 60px;
+
+	content: "4";
+}
+.sl-large-bricks:before {
+	line-height: 60px;
+
+	height: 60px;
+
+	content: "5";
+}
+.sl-large-brush-1:before {
+	line-height: 60px;
+
+	height: 60px;
+
+	content: "6";
+}
+.sl-large-brush-2:before {
+	line-height: 60px;
+
+	height: 60px;
+
+	content: "7";
+}
+.sl-large-percent:before {
+	line-height: 60px;
+
+	height: 60px;
+
+	content: "8";
+}
+.sl-large-gears:before {
+	line-height: 60px;
+
+	height: 60px;
+
+	content: "9";
+}
+.sl-large-tick:before {
+	line-height: 60px;
+
+	height: 60px;
+
+	content: "!";
+}
+.sl-large-plan:before {
+	line-height: 60px;
+
+	height: 60px;
+
+	content: "@";
+}
+.sl-large-megaphone:before {
+	line-height: 60px;
+
+	height: 60px;
+
+	content: "#";
+}
+.sl-large-calculator:before {
+	line-height: 60px;
+
+	height: 60px;
+
+	content: "$";
+}
+.sl-large-trolley:before {
+	line-height: 60px;
+
+	height: 60px;
+
+	content: "%";
+}
+.sl-large-payment:before {
+	line-height: 60px;
+
+	height: 60px;
+
+	content: "^";
+}
+.sl-large-construction:before {
+	line-height: 60px;
+
+	height: 60px;
+
+	content: "&";
+}
+.sl-large-scissors:before {
+	line-height: 60px;
+
+	height: 60px;
+
+	content: "*";
+}

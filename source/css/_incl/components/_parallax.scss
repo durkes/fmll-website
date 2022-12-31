@@ -1,0 +1,20 @@
+.parallax {
+	&.bg-1 {
+		$this-url: '../images/pics/1920x1200/lawn-0.jpg';
+		background: url($this-url); /* fallback */
+		background: linear-gradient(rgba(8, 22, 37, 0.6), rgba(8, 22, 37, 0.6)), url($this-url);
+		background-size: cover;
+	}
+
+	&.bg-2 {
+		$this-url: '../images/pics/1920x1200/gazebo.jpg';
+		background: url($this-url); /* fallback */
+		background: linear-gradient(rgba(8, 22, 37, 0.6), rgba(8, 22, 37, 0.6)), url($this-url);
+		background-size: cover;
+	}
+
+	&.cover {
+		/* for iOS fallback */
+		background-size: cover;
+	}
+}

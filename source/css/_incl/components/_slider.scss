@@ -1,0 +1,145 @@
+.slider-control {
+	color: #fff;
+	font-size: 24px;
+	position: absolute;
+	z-index: 1;
+	top: 43%;
+	width: 26px;
+	height: 26px;
+	padding: 1pc;
+	-webkit-transition: all 0.3s ease 0s;
+	-moz-transition: all 0.3s ease 0s;
+	transition: all 0.3s ease 0s;
+	border: 1px solid $color-gray-darker;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+
+	&.right {
+		right: 0;
+	}
+
+	&:hover {
+		border-color: $color-primary;
+		background: $color-primary;
+		text-decoration: none;
+	}
+}
+
+.slider-container {
+	position: relative;
+	width: 100%;
+	padding: 0;
+}
+
+.revolution-slider {
+	position: relative;
+	width: 100%;
+	height: 600px;
+	background-color: $color-gray;
+}
+
+.slider-content-box {
+	width: 460px;
+	max-height: auto;
+	padding-bottom: 47px;
+	white-space: normal;
+	background: rgba(38, 38, 40, 0.7);
+
+	h2 {
+		padding: 21px 30px 20px;
+		color: #fff;
+		border-bottom: 1px solid $color-primary;
+		background: rgba(38, 38, 40, 0.68);
+
+		a {
+			color: #fff;
+		}
+	}
+
+	p {
+		font-family: $font-family-base;
+		font-size: 1pc;
+		line-height: 26px;
+		padding: 23px 30px 40px;
+		color: #fff;
+	}
+
+	.more {
+		margin-left: 30px;
+	}
+}
+
+@media screen and (max-width: 1189px) {
+	.slider-content-box {
+		max-width: 380px;
+		margin-left: 50px;
+		padding-bottom: 42px;
+
+		h2 {
+			font-size: 21px;
+			line-height: 2pc;
+			padding: 1pc 25px 17px;
+		}
+
+		p {
+			font-size: 14px;
+			line-height: 24px;
+			padding: 19px 25px 36px;
+		}
+
+		.more {
+			margin-left: 25px;
+		}
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.slider-content-box {
+		max-width: 300px;
+		margin-left: 20px;
+		padding-bottom: 0;
+
+		h2 {
+			font-size: 1pc;
+			font-weight: 500;
+			line-height: 26px;
+			padding: 11px 18px;
+		}
+
+		p {
+			font-size: 13px;
+			line-height: 21px;
+			padding: 13px 18px 15px;
+		}
+
+		.more {
+			display: none;
+		}
+	}
+
+	.slider-control {
+		padding: 10px;
+	}
+}
+
+@media screen and (max-width: 479px) {
+	.slider-content-box {
+		margin-left: 10px;
+
+		h2 {
+			font-size: 14px;
+			line-height: 24px;
+			padding: 9px 15px 8px;
+			border-bottom: none;
+		}
+
+		p {
+			display: none;
+		}
+	}
+
+	.slider-control {
+		top: 20px;
+	}
+}

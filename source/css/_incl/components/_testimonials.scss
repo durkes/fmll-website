@@ -1,0 +1,142 @@
+.testimonials-container {
+	position: relative;
+
+	.testimonials-carousel {
+		left: 60px !important;
+		width: 1050px !important;
+	}
+}
+
+.testimonials-list {
+	li {
+		float: left;
+		width: 1050px;
+		text-align: center;
+
+		&:before {
+			font-size: 3pc;
+			display: block;
+			width: 3pc;
+			margin-right: auto;
+			margin-left: auto;
+			padding: 19px;
+			color: #fff;
+			border: 1px solid $color-gray-darker;
+			-webkit-border-radius: 50%;
+			-moz-border-radius: 50%;
+			border-radius: 50%;
+		}
+	}
+
+	.ornament {
+		position: relative;
+		width: 1px;
+		height: 20px;
+		margin-right: auto;
+		margin-bottom: 13px;
+		margin-left: auto;
+		background-color: $color-gray-darker;
+
+		&:after {
+			position: absolute;
+			bottom: -13px;
+			left: -6px;
+			width: 11px;
+			height: 11px;
+			content: "";
+			border: 1px solid $color-gray-darker;
+			-webkit-border-radius: 50%;
+			-moz-border-radius: 50%;
+			border-radius: 50%;
+		}
+	}
+
+	p {
+		font-family: $font-family-base;
+		font-size: 21px;
+		font-weight: 300;
+		line-height: 36px;
+		padding: 29px 50px 0;
+		color: #fff;
+	}
+
+	.author, .author-details {
+		font-family: $font-family-base;
+		font-weight: 500;
+	}
+
+	p:after {
+		display: block;
+		width: 40px;
+		height: 2px;
+		margin: 30px auto 34px;
+		content: "";
+		background: $color-primary;
+	}
+
+	.author {
+		font-size: 13px;
+		line-height: 20px;
+		color: #fff;
+	}
+
+	.author-details {
+		font-size: 11px;
+		line-height: 1pc;
+		margin-top: 7px;
+		letter-spacing: 1px;
+		color: #fff;
+	}
+
+	.author, .author-details {
+		text-transform: uppercase;
+	}
+}
+
+@media screen and (max-width: 1189px) {
+	.testimonials-container .testimonials-carousel {
+		width: 630px !important;
+	}
+
+	.testimonials-list {
+		li {
+			width: 630px;
+		}
+
+		p {
+			font-size: 18px;
+			font-weight: 400;
+			line-height: 28px;
+			padding: 29px 30px 0;
+		}
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.testimonials-container .testimonials-carousel {
+		left: 3pc !important;
+		width: 366px !important;
+	}
+
+	.testimonials-list {
+		li {
+			width: 366px;
+		}
+
+		p {
+			font-size: 1pc;
+			line-height: 26px;
+		}
+	}
+}
+
+@media screen and (max-width: 479px) {
+	.testimonials-container .testimonials-carousel {
+		left: 0 !important;
+		width: 300px !important;
+	}
+
+	.testimonials-list li {
+		width: 300px;
+	}
+}
